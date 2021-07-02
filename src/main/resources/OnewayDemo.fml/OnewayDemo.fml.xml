@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VirtualModel id="SYL-1" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" uri="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml" version="0.1" visibility="Public" name="OnewayDemo" author="sylvain" userID="SYL" flexoID="1">
+  <UseModelSlotDeclaration id="0" modelSlotClass="org.openflexo.foundation.fml.rt.FMLRTVirtualModelInstanceModelSlot" userID="SYL" flexoID="-1" />
+  <Inspector id="SYL-2" inspectorTitle="OnewayDemo" userID="SYL" flexoID="2" />
+  <FMLRTVirtualModelInstanceModelSlot id="SYL-11" virtualModelURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="genericProcess" userID="SYL" flexoID="11" />
+  <CreationScheme id="SYL-12" label="create" name="create" width="800" height="600" userID="SYL" flexoID="12">
+    <BehaviourControlGraph_AssignationAction id="SYL-17" assign="genericProcess" userID="SYL" flexoID="17">
+      <AssignableAction_AddVirtualModelInstance id="SYL-14" virtualModelInstanceTitle="&quot;GenericProcess&quot;" virtualModelInstanceName="&quot;GenericProcess&quot;" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml.create(bpmnResource)" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml" receiver="this" userID="SYL" flexoID="14">
+        <AddFlexoConceptInstanceParameter id="SYL-16" paramName="bpmnResource" value="parameters.genericProcessResource" userID="SYL" flexoID="16" />
+      </AssignableAction_AddVirtualModelInstance>
+    </BehaviourControlGraph_AssignationAction>
+    <GenericBehaviourParameter id="SYL-18" isRequired="true" widget="CUSTOM_WIDGET" name="genericProcessResource" type="org.openflexo.foundation.resource.FlexoResourceType&lt;org.openflexo.technologyadapter.emf.model.EMFModel&gt;" userID="SYL" flexoID="18" />
+  </CreationScheme>
+</VirtualModel>

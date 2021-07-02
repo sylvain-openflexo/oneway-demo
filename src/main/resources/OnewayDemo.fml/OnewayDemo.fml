@@ -1,0 +1,18 @@
+use org.openflexo.foundation.fml.rt.FMLRTVirtualModelInstanceModelSlot;
+
+/**
+ * 
+ * @author sylvain
+ * @version 0.1
+ */
+@VirtualModel(uri="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml")
+public class OnewayDemo {
+
+  public BPMNEditor genericProcess;
+
+  @CreationScheme  
+  OnewayDemo:create(EMFModelResource genericProcessResource) {  
+    genericProcess = BPMNEditor.create(parameters.genericProcessResource);  
+  }  
+
+}
