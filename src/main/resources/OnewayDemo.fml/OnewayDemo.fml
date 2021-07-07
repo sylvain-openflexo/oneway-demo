@@ -10,11 +10,17 @@ public class OnewayDemo {
 
   public BPMNEditor genericProcess;
   public VariabilityModel variabilityModel;
+  public List configurationModels;
 
   @CreationScheme  
   OnewayDemo:create(EMFModelResource genericProcessResource) {  
     genericProcess = BPMNEditor.create(parameters.genericProcessResource);    
     variabilityModel = VariabilityModel.create();  
+  }  
+
+  @ActionScheme  
+  public Void makeConfigurationModel(String configurationIdentifier, ExcelWorkbookResource configurationModelResource) {  
+    configurationModels.add(ConfigurationModel.create(parameters.configurationModelResource,parameters.configurationIdentifier))  
   }  
 
 }

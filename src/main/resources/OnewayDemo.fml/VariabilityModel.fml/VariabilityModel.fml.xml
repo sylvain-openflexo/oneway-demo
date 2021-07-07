@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VirtualModel id="SYL-1" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" uri="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/VariabilityModel.fml" version="0.1" visibility="Public" name="VariabilityModel" author="sylvain" userID="SYL" flexoID="1">
   <FlexoConcept id="SYL-6" visibility="Public" name="VariationPoint" userID="SYL" flexoID="6">
-    <Inspector id="SYL-7" inspectorTitle="VariationPoint" userID="SYL" flexoID="7" />
+    <Inspector id="SYL-7" renderer="(&quot;Variation point at &quot; + targetTask.name)" inspectorTitle="VariationPoint" userID="SYL" flexoID="7">
+      <InspectorEntry id="SYL-114" readOnly="true" widget="CUSTOM_WIDGET" data="targetTask" name="targetTask" label="targetTask" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Task&gt;" userID="SYL" flexoID="114" />
+    </Inspector>
     <EmbeddedFlexoConcept id="SYL-16" visibility="Public" name="Alternative" userID="SYL" flexoID="16">
-      <Inspector id="SYL-17" inspectorTitle="Alternative" userID="SYL" flexoID="17" />
+      <Inspector id="SYL-17" renderer="(&quot;Alternative &quot; + identifier)" inspectorTitle="Alternative" userID="SYL" flexoID="17">
+        <InspectorEntry id="SYL-115" widget="TEXT_FIELD" data="identifier" name="identifier" label="identifier" type="java.lang.String" userID="SYL" flexoID="115" />
+        <InspectorEntry id="SYL-116" widget="CUSTOM_WIDGET" data="bpmnFragment" name="bpmnFragment" label="bpmnFragment" type="org.openflexo.foundation.fml.VirtualModelInstanceType&lt;http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml&gt;" userID="SYL" flexoID="116" />
+        <InspectorEntry id="SYL-117" widget="CUSTOM_WIDGET" data="transformationType" name="transformationType" label="transformationType" type="org.openflexo.foundation.fml.FlexoEnumType&lt;file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/VariabilityModel.fml#TransformationType&gt;" userID="SYL" flexoID="117" />
+      </Inspector>
       <PrimitiveRole id="SYL-23" primitiveType="String" cloningStrategy="Clone" cardinality="ZeroOne" name="identifier" userID="SYL" flexoID="23" />
       <FMLRTVirtualModelInstanceModelSlot id="SYL-26" virtualModelURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="bpmnFragment" userID="SYL" flexoID="26" />
       <FlexoConceptInstanceRole id="SYL-31" virtualModelInstance="container.container" flexoConceptTypeURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/VariabilityModel.fml#TransformationType" cloningStrategy="Reference" cardinality="ZeroOne" name="transformationType" userID="SYL" flexoID="31" />
@@ -60,7 +66,7 @@
     <Inspector id="SYL-30" inspectorTitle="TransformationType" userID="SYL" flexoID="30" />
   </FlexoEnum>
   <UseModelSlotDeclaration id="0" modelSlotClass="org.openflexo.foundation.fml.rt.FMLRTVirtualModelInstanceModelSlot" userID="SYL" flexoID="-1" />
-  <Inspector id="SYL-2" inspectorTitle="VariabilityModel" userID="SYL" flexoID="2" />
+  <Inspector id="SYL-2" renderer="(&quot;Variability model for &quot; + container.name)" inspectorTitle="VariabilityModel" userID="SYL" flexoID="2" />
   <FMLRTVirtualModelInstanceModelSlot id="SYL-32" virtualModelURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml" isRequired="true" cloningStrategy="Reference" cardinality="ZeroMany" name="bpmnFragments" userID="SYL" flexoID="32" />
   <CreationScheme id="SYL-33" label="create" name="create" width="800" height="600" userID="SYL" flexoID="33">
     <BehaviourControlGraph_EmptyControlGraph id="SYL-34" userID="SYL" flexoID="34" />

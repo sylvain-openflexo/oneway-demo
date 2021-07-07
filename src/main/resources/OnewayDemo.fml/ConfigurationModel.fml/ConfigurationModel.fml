@@ -1,0 +1,40 @@
+use org.openflexo.technologyadapter.excel.BasicExcelModelSlot;
+
+/**
+ * 
+ * @author sylvain
+ * @version 0.1
+ */
+@VirtualModel(uri="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/ConfigurationModel.fml")
+public class ConfigurationModel {
+
+  public ExcelWorkbook excel;
+  public String identifier;
+
+  @CreationScheme  
+  ConfigurationModel:create(String identifier, ExcelWorkbookResource excelResource) {  
+    identifier = parameters.identifier;    
+    excel = parameters.excelResource.resourceData;  
+  }  
+
+
+  @FlexoConcept  
+  public class Configuration {  
+  
+    public VariationPoint variationPoint;  
+    public ExcelRow excelRow;  
+  
+    @CreationScheme    
+    Configuration:create(VariationPoint variationPoint, ExcelRow excelRow) {    
+      variationPoint = parameters.variationPoint;      
+      excelRow = parameters.excelRow;    
+    }    
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+  }  
+
+}

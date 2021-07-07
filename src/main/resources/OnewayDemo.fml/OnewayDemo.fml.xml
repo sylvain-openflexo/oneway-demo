@@ -4,6 +4,7 @@
   <Inspector id="SYL-2" inspectorTitle="OnewayDemo" userID="SYL" flexoID="2" />
   <FMLRTVirtualModelInstanceModelSlot id="SYL-11" virtualModelURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="genericProcess" userID="SYL" flexoID="11" />
   <FMLRTVirtualModelInstanceModelSlot id="SYL-30" virtualModelURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/VariabilityModel.fml" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="variabilityModel" userID="SYL" flexoID="30" />
+  <FMLRTVirtualModelInstanceModelSlot id="SYL-35" virtualModelURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/ConfigurationModel.fml" isRequired="true" cloningStrategy="Reference" cardinality="ZeroMany" name="configurationModels" userID="SYL" flexoID="35" />
   <CreationScheme id="SYL-12" label="create" name="create" width="800" height="600" userID="SYL" flexoID="12">
     <BehaviourControlGraph_Sequence id="SYL-26" userID="SYL" flexoID="26">
       <ControlGraph2_AssignationAction id="SYL-25" assign="variabilityModel" ownerContext="controlGraph2" userID="SYL" flexoID="25">
@@ -17,4 +18,14 @@
     </BehaviourControlGraph_Sequence>
     <GenericBehaviourParameter id="SYL-18" isRequired="true" widget="CUSTOM_WIDGET" name="genericProcessResource" type="org.openflexo.foundation.resource.FlexoResourceType&lt;org.openflexo.technologyadapter.emf.model.EMFModel&gt;" userID="SYL" flexoID="18" />
   </CreationScheme>
+  <ActionScheme id="SYL-34" visibility="Public" label="makeConfigurationModel" name="makeConfigurationModel" width="800" height="600" userID="SYL" flexoID="34">
+    <BehaviourControlGraph_AddToListAction id="SYL-44" list="configurationModels" userID="SYL" flexoID="44">
+      <AssignableAction_AddVirtualModelInstance id="SYL-42" virtualModelInstanceTitle="parameters.configurationIdentifier" virtualModelInstanceName="parameters.configurationIdentifier" creationSchemeURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/ConfigurationModel.fml.create(identifier,excelResource)" flexoConceptTypeURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/ConfigurationModel.fml" receiver="this" ownerContext="controlGraph2" userID="SYL" flexoID="42">
+        <AddFlexoConceptInstanceParameter id="SYL-43" paramName="excelResource" value="parameters.configurationModelResource" userID="SYL" flexoID="43" />
+        <AddFlexoConceptInstanceParameter id="SYL-46" paramName="identifier" value="parameters.configurationIdentifier" userID="SYL" flexoID="46" />
+      </AssignableAction_AddVirtualModelInstance>
+    </BehaviourControlGraph_AddToListAction>
+    <GenericBehaviourParameter id="SYL-45" widget="TEXT_FIELD" name="configurationIdentifier" type="java.lang.String" userID="SYL" flexoID="45" />
+    <GenericBehaviourParameter id="SYL-40" isRequired="true" widget="CUSTOM_WIDGET" name="configurationModelResource" type="org.openflexo.foundation.resource.FlexoResourceType&lt;org.openflexo.technologyadapter.excel.model.ExcelWorkbook&gt;" userID="SYL" flexoID="40" />
+  </ActionScheme>
 </VirtualModel>

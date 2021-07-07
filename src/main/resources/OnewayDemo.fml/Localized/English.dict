@@ -1,1 +1,5 @@
+configurationIdentifier=ConfigurationIdentifier
+configurationModelResource=ConfigurationModelResource
 genericProcessResource=GenericProcessResource
+invalid_parameter=Invalid parameter
+makeConfigurationModel=MakeConfigurationModel
