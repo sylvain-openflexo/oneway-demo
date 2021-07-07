@@ -9,6 +9,7 @@ use org.openflexo.foundation.fml.rt.FMLRTVirtualModelInstanceModelSlot;
 public class OnewayDemo {
 
   public BPMNEditor genericProcess;
+  public VariabilityModel variabilityModel;
 
   @CreationScheme  
   OnewayDemo:create(EMFModelResource genericProcessResource) {  

@@ -3,6 +3,7 @@
   <UseModelSlotDeclaration id="0" modelSlotClass="org.openflexo.foundation.fml.rt.FMLRTVirtualModelInstanceModelSlot" userID="SYL" flexoID="-1" />
   <Inspector id="SYL-2" inspectorTitle="OnewayDemo" userID="SYL" flexoID="2" />
   <FMLRTVirtualModelInstanceModelSlot id="SYL-11" virtualModelURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="genericProcess" userID="SYL" flexoID="11" />
+  <FMLRTVirtualModelInstanceModelSlot id="SYL-30" virtualModelURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/VariabilityModel.fml" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="variabilityModel" userID="SYL" flexoID="30" />
   <CreationScheme id="SYL-12" label="create" name="create" width="800" height="600" userID="SYL" flexoID="12">
     <BehaviourControlGraph_Sequence id="SYL-26" userID="SYL" flexoID="26">
       <ControlGraph2_AssignationAction id="SYL-25" assign="variabilityModel" ownerContext="controlGraph2" userID="SYL" flexoID="25">
