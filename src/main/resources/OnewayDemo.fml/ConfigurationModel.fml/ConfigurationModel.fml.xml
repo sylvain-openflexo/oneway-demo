@@ -2,7 +2,7 @@
 <VirtualModel id="SYL-1" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" uri="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/ConfigurationModel.fml" version="0.1" visibility="Public" name="ConfigurationModel" author="sylvain" userID="SYL" flexoID="1">
   <FlexoConcept id="SYL-11" visibility="Public" name="Configuration" userID="SYL" flexoID="11">
     <Inspector id="SYL-12" inspectorTitle="Configuration" userID="SYL" flexoID="12" />
-    <FlexoConceptInstanceRole id="SYL-21" virtualModelInstance="variabilityModel" flexoConceptTypeURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/VariabilityModel.fml#VariationPoint" container="" cloningStrategy="Reference" cardinality="ZeroOne" name="variationPoint" userID="SYL" flexoID="21" />
+    <FlexoConceptInstanceRole id="SYL-21" virtualModelInstance="variabilityModel" flexoConceptTypeURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/VariabilityModel.fml#VariationPoint" cloningStrategy="Reference" cardinality="ZeroOne" name="variationPoint" userID="SYL" flexoID="21" />
     <ExcelRowRole id="SYL-22" container="excel" cloningStrategy="Reference" cardinality="ZeroOne" name="excelRow" userID="SYL" flexoID="22" />
     <FlexoConceptInstanceRole id="SYL-89" virtualModelInstance="variabilityModel" flexoConceptTypeURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/VariabilityModel.fml#Alternative" container="variationPoint" cloningStrategy="Reference" cardinality="ZeroOne" name="alternative" userID="SYL" flexoID="89" />
     <CreationScheme id="SYL-16" label="create" name="create" width="800" height="600" userID="SYL" flexoID="16">
@@ -38,12 +38,14 @@
     </DeletionScheme>
   </FlexoConcept>
   <UseModelSlotDeclaration id="0" modelSlotClass="org.openflexo.technologyadapter.excel.BasicExcelModelSlot" userID="SYL" flexoID="-1" />
+  <UseModelSlotDeclaration id="1" modelSlotClass="org.openflexo.foundation.fml.rt.FMLRTVirtualModelInstanceModelSlot" userID="SYL" flexoID="-1" />
   <Inspector id="SYL-2" renderer="identifier" inspectorTitle="ConfigurationModel" userID="SYL" flexoID="2">
     <InspectorEntry id="SYL-32" widget="TEXT_FIELD" data="identifier" name="identifier" label="identifier" type="java.lang.String" userID="SYL" flexoID="32" />
-    <InspectorEntry id="SYL-33" widget="TEXT_FIELD" readOnly="true" data="excel.resource.displayName" name="excelResource" label="excelResource" type="java.lang.String" userID="SYL" flexoID="33" />
+    <InspectorEntry id="SYL-33" readOnly="true" widget="TEXT_FIELD" data="excel.resource.displayName" name="excelResource" label="excelResource" type="java.lang.String" userID="SYL" flexoID="33" />
   </Inspector>
   <BasicExcelModelSlot id="SYL-6" templateWorkbookURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/XLS/Choices.xlsx" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="excel" userID="SYL" flexoID="6" />
   <PrimitiveRole id="SYL-29" primitiveType="String" cloningStrategy="Clone" cardinality="ZeroOne" name="identifier" userID="SYL" flexoID="29" />
+  <FMLRTVirtualModelInstanceModelSlot id="SYL-113" virtualModelURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="resolvedBPMN" userID="SYL" flexoID="113" />
   <CreationScheme id="SYL-7" label="create" name="create" width="800" height="600" userID="SYL" flexoID="7">
     <BehaviourControlGraph_Sequence id="SYL-34" userID="SYL" flexoID="34">
       <ControlGraph2_AssignationAction id="SYL-9" assign="excel" ownerContext="controlGraph2" userID="SYL" flexoID="9">
@@ -80,5 +82,8 @@
       </ControlGraph2_IterationAction>
       <ControlGraph1_LogAction id="SYL-64" logLevel="INFO" logString="&quot;Updating&quot;" ownerContext="controlGraph1" userID="SYL" flexoID="64" />
     </BehaviourControlGraph_Sequence>
+  </ActionScheme>
+  <ActionScheme id="SYL-114" visibility="Public" label="resolve" name="resolve" width="800" height="600" userID="SYL" flexoID="114">
+    <BehaviourControlGraph_LogAction id="SYL-117" logLevel="INFO" logString="&quot;Resolve configuration&quot;" userID="SYL" flexoID="117" />
   </ActionScheme>
 </VirtualModel>
