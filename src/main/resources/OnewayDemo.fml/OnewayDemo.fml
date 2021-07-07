@@ -20,7 +20,9 @@ public class OnewayDemo {
 
   @ActionScheme  
   public Void makeConfigurationModel(String configurationIdentifier, ExcelWorkbookResource configurationModelResource) {  
-    configurationModels.add(ConfigurationModel.create(parameters.configurationModelResource,parameters.configurationIdentifier))  
+    ConfigurationModel newConfigurationModel = ConfigurationModel.create(parameters.configurationIdentifier,parameters.configurationModelResource);    
+    configurationModels.add(newConfigurationModel)    
+    newConfigurationModel.update()  
   }  
 
 }

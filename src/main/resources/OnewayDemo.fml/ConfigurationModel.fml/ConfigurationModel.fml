@@ -17,17 +17,33 @@ public class ConfigurationModel {
     excel = parameters.excelResource.resourceData;  
   }  
 
+  @ActionScheme  
+  Void update() {  
+    log "Updating"    
+    for (variationPoint : variabilityModel.SelectFlexoConceptInstance(type=VariationPoint)) {    
+      log ("variationPoint=" + variationPoint)      
+      ExcelRow row = excel.XLS::SelectUniqueExcelRow where=(selected.getExcelCellAt(0).cellValueAsString = variationPoint.targetTask.eObject.id);      
+      log ("row=" + row)      
+      Configuration.create(variationPoint,row)    
+    }  
+  }  
+
 
   @FlexoConcept  
   public class Configuration {  
   
     public VariationPoint variationPoint;  
     public ExcelRow excelRow;  
+    public Alternative alternative;  
   
     @CreationScheme    
     Configuration:create(VariationPoint variationPoint, ExcelRow excelRow) {    
       variationPoint = parameters.variationPoint;      
-      excelRow = parameters.excelRow;    
+      excelRow = parameters.excelRow;      
+      alternative = variabilityModel.SelectUniqueFlexoConceptInstance(type=Alternative,where=where=(selected.identifier = excelRow.getExcelCellAt(2).cellValueAsString));      
+      log ("Alternative=" + alternative)      
+      log ("variabilityModel=" + variabilityModel)      
+      log ("value=" + excelRow.getExcelCellAt(2).cellValueAsString)    
     }    
   
     @DeletionScheme    

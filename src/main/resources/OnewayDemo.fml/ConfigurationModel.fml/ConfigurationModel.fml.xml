@@ -2,13 +2,30 @@
 <VirtualModel id="SYL-1" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" uri="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/ConfigurationModel.fml" version="0.1" visibility="Public" name="ConfigurationModel" author="sylvain" userID="SYL" flexoID="1">
   <FlexoConcept id="SYL-11" visibility="Public" name="Configuration" userID="SYL" flexoID="11">
     <Inspector id="SYL-12" inspectorTitle="Configuration" userID="SYL" flexoID="12" />
-    <FlexoConceptInstanceRole id="SYL-21" virtualModelInstance="variabilityModel" flexoConceptTypeURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/VariabilityModel.fml#VariationPoint" cloningStrategy="Reference" cardinality="ZeroOne" name="variationPoint" userID="SYL" flexoID="21" />
+    <FlexoConceptInstanceRole id="SYL-21" virtualModelInstance="variabilityModel" flexoConceptTypeURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/VariabilityModel.fml#VariationPoint" container="" cloningStrategy="Reference" cardinality="ZeroOne" name="variationPoint" userID="SYL" flexoID="21" />
     <ExcelRowRole id="SYL-22" container="excel" cloningStrategy="Reference" cardinality="ZeroOne" name="excelRow" userID="SYL" flexoID="22" />
+    <FlexoConceptInstanceRole id="SYL-89" virtualModelInstance="variabilityModel" flexoConceptTypeURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/VariabilityModel.fml#Alternative" container="variationPoint" cloningStrategy="Reference" cardinality="ZeroOne" name="alternative" userID="SYL" flexoID="89" />
     <CreationScheme id="SYL-16" label="create" name="create" width="800" height="600" userID="SYL" flexoID="16">
       <BehaviourControlGraph_Sequence id="SYL-27" userID="SYL" flexoID="27">
-        <ControlGraph2_AssignationAction id="SYL-26" assign="excelRow" ownerContext="controlGraph2" userID="SYL" flexoID="26">
-          <AssignableAction_ExpressionAction id="SYL-25" expression="parameters.excelRow" userID="SYL" flexoID="25" />
-        </ControlGraph2_AssignationAction>
+        <ControlGraph2_Sequence id="SYL-94" ownerContext="controlGraph2" userID="SYL" flexoID="94">
+          <ControlGraph2_Sequence id="SYL-104" ownerContext="controlGraph2" userID="SYL" flexoID="104">
+            <ControlGraph2_Sequence id="SYL-105" ownerContext="controlGraph2" userID="SYL" flexoID="105">
+              <ControlGraph2_Sequence id="SYL-106" ownerContext="controlGraph2" userID="SYL" flexoID="106">
+                <ControlGraph2_LogAction id="SYL-103" logLevel="INFO" logString="(&quot;value=&quot; + excelRow.getExcelCellAt(2).cellValueAsString)" ownerContext="controlGraph2" userID="SYL" flexoID="103" />
+                <ControlGraph1_LogAction id="SYL-101" logLevel="INFO" logString="(&quot;variabilityModel=&quot; + variabilityModel)" ownerContext="controlGraph1" userID="SYL" flexoID="101" />
+              </ControlGraph2_Sequence>
+              <ControlGraph1_LogAction id="SYL-99" logLevel="INFO" logString="(&quot;Alternative=&quot; + alternative)" ownerContext="controlGraph1" userID="SYL" flexoID="99" />
+            </ControlGraph2_Sequence>
+            <ControlGraph1_AssignationAction id="SYL-93" assign="alternative" ownerContext="controlGraph1" userID="SYL" flexoID="93">
+              <AssignableAction_SelectUniqueFlexoConceptInstance id="SYL-91" container="variationPoint" flexoConceptTypeURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/VariabilityModel.fml#Alternative" receiver="variabilityModel" userID="SYL" flexoID="91">
+                <Condition id="SYL-92" condition="(selected.identifier = excelRow.getExcelCellAt(2).cellValueAsString)" userID="SYL" flexoID="92" />
+              </AssignableAction_SelectUniqueFlexoConceptInstance>
+            </ControlGraph1_AssignationAction>
+          </ControlGraph2_Sequence>
+          <ControlGraph1_AssignationAction id="SYL-26" assign="excelRow" ownerContext="controlGraph1" userID="SYL" flexoID="26">
+            <AssignableAction_ExpressionAction id="SYL-25" expression="parameters.excelRow" userID="SYL" flexoID="25" />
+          </ControlGraph1_AssignationAction>
+        </ControlGraph2_Sequence>
         <ControlGraph1_AssignationAction id="SYL-24" assign="variationPoint" ownerContext="controlGraph1" userID="SYL" flexoID="24">
           <AssignableAction_ExpressionAction id="SYL-23" expression="parameters.variationPoint" userID="SYL" flexoID="23" />
         </ControlGraph1_AssignationAction>
@@ -39,4 +56,29 @@
     <GenericBehaviourParameter id="SYL-35" widget="TEXT_FIELD" name="identifier" type="java.lang.String" userID="SYL" flexoID="35" />
     <GenericBehaviourParameter id="SYL-10" isRequired="true" widget="CUSTOM_WIDGET" name="excelResource" type="org.openflexo.foundation.resource.FlexoResourceType&lt;org.openflexo.technologyadapter.excel.model.ExcelWorkbook&gt;" userID="SYL" flexoID="10" />
   </CreationScheme>
+  <ActionScheme id="SYL-61" label="update" name="update" width="800" height="600" userID="SYL" flexoID="61">
+    <BehaviourControlGraph_Sequence id="SYL-95" userID="SYL" flexoID="95">
+      <ControlGraph2_IterationAction id="SYL-67" iteratorName="variationPoint" ownerContext="controlGraph2" userID="SYL" flexoID="67">
+        <Iteration_SelectFlexoConceptInstance id="SYL-68" container="variabilityModel" flexoConceptTypeURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/VariabilityModel.fml#VariationPoint" receiver="variabilityModel" ownerContext="iterationControlGraph" userID="SYL" flexoID="68" />
+        <ControlGraph_Sequence id="SYL-75" ownerContext="controlGraph" userID="SYL" flexoID="75">
+          <ControlGraph2_Sequence id="SYL-96" ownerContext="controlGraph2" userID="SYL" flexoID="96">
+            <ControlGraph2_Sequence id="SYL-97" ownerContext="controlGraph2" userID="SYL" flexoID="97">
+              <ControlGraph2_AddFlexoConceptInstance id="SYL-86" creationSchemeURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/ConfigurationModel.fml#Configuration.create(variationPoint,excelRow)" flexoConceptTypeURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/ConfigurationModel.fml#Configuration" receiver="this" ownerContext="controlGraph2" userID="SYL" flexoID="86">
+                <AddFlexoConceptInstanceParameter id="SYL-87" paramName="variationPoint" value="variationPoint" userID="SYL" flexoID="87" />
+                <AddFlexoConceptInstanceParameter id="SYL-88" paramName="excelRow" value="row" userID="SYL" flexoID="88" />
+              </ControlGraph2_AddFlexoConceptInstance>
+              <ControlGraph1_LogAction id="SYL-82" logLevel="INFO" logString="(&quot;row=&quot; + row)" ownerContext="controlGraph1" userID="SYL" flexoID="82" />
+            </ControlGraph2_Sequence>
+            <ControlGraph1_DeclarationAction id="SYL-79" variable="row" ownerContext="controlGraph1" userID="SYL" flexoID="79">
+              <AssignableAction_SelectUniqueExcelRow id="SYL-78" excelSheet="excel.excelSheets.get(0)" receiver="excel" userID="SYL" flexoID="78">
+                <Condition id="SYL-80" condition="(selected.getExcelCellAt(0).cellValueAsString = variationPoint.targetTask.eObject.id)" userID="SYL" flexoID="80" />
+              </AssignableAction_SelectUniqueExcelRow>
+            </ControlGraph1_DeclarationAction>
+          </ControlGraph2_Sequence>
+          <ControlGraph1_LogAction id="SYL-74" logLevel="INFO" logString="(&quot;variationPoint=&quot; + variationPoint)" ownerContext="controlGraph1" userID="SYL" flexoID="74" />
+        </ControlGraph_Sequence>
+      </ControlGraph2_IterationAction>
+      <ControlGraph1_LogAction id="SYL-64" logLevel="INFO" logString="&quot;Updating&quot;" ownerContext="controlGraph1" userID="SYL" flexoID="64" />
+    </BehaviourControlGraph_Sequence>
+  </ActionScheme>
 </VirtualModel>
