@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FMLRTVirtualModelInstance id="0" virtualModelURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml" modelVersion="1.0" title="GenericProcessDiagram" version="0.1" flexoConceptURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml" userID="SYL" flexoID="1">
+  <FlexoConceptInstance id="1" flexoConceptURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#StartEventGR" userID="SYL" flexoID="2">
+    <ConceptActorReference id="2" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#StartEvent_1tqxnuc" roleName="eObject" userID="SYL" flexoID="27" />
+    <ConceptActorReference id="3" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#_BPMNShape_StartEvent_2" roleName="bpmnShape" userID="SYL" flexoID="28" />
+    <ModelObjectActorReference id="4" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessModel.fml.rt#SYL_2" roleName="modelElement" userID="SYL" flexoID="29" />
+    <ModelObjectActorReference id="5" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Diagrams/GenericProcess.diagram#SYL_2" roleName="shape" userID="SYL" flexoID="30" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="6" flexoConceptURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#ParallelGatewayGR" userID="SYL" flexoID="4">
+    <ConceptActorReference id="7" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Gateway_139r8rg" roleName="eObject" userID="SYL" flexoID="31" />
+    <ConceptActorReference id="8" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Gateway_02okhl5_di" roleName="bpmnShape" userID="SYL" flexoID="32" />
+    <ModelObjectActorReference id="9" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessModel.fml.rt#SYL_5" roleName="modelElement" userID="SYL" flexoID="33" />
+    <ModelObjectActorReference id="10" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Diagrams/GenericProcess.diagram#SYL_3" roleName="shape" userID="SYL" flexoID="34" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="11" flexoConceptURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#TaskGR" userID="SYL" flexoID="3">
+    <ConceptActorReference id="12" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Activity_1j21h6m" roleName="eObject" userID="SYL" flexoID="35" />
+    <ConceptActorReference id="13" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Activity_1j21h6m_di" roleName="bpmnShape" userID="SYL" flexoID="36" />
+    <ModelObjectActorReference id="14" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessModel.fml.rt#SYL_3" roleName="modelElement" userID="SYL" flexoID="37" />
+    <ModelObjectActorReference id="15" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Diagrams/GenericProcess.diagram#SYL_4" roleName="shape" userID="SYL" flexoID="38" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="16" flexoConceptURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#TaskGR" userID="SYL" flexoID="6">
+    <ConceptActorReference id="17" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Activity_1hr8lnl" roleName="eObject" userID="SYL" flexoID="39" />
+    <ConceptActorReference id="18" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Activity_1hr8lnl_di" roleName="bpmnShape" userID="SYL" flexoID="40" />
+    <ModelObjectActorReference id="19" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessModel.fml.rt#SYL_9" roleName="modelElement" userID="SYL" flexoID="41" />
+    <ModelObjectActorReference id="20" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Diagrams/GenericProcess.diagram#SYL_5" roleName="shape" userID="SYL" flexoID="42" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="21" flexoConceptURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#TaskGR" userID="SYL" flexoID="7">
+    <ConceptActorReference id="22" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Activity_16nvbq4" roleName="eObject" userID="SYL" flexoID="43" />
+    <ConceptActorReference id="23" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Activity_16nvbq4_di" roleName="bpmnShape" userID="SYL" flexoID="44" />
+    <ModelObjectActorReference id="24" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessModel.fml.rt#SYL_11" roleName="modelElement" userID="SYL" flexoID="45" />
+    <ModelObjectActorReference id="25" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Diagrams/GenericProcess.diagram#SYL_6" roleName="shape" userID="SYL" flexoID="46" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="26" flexoConceptURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#TaskGR" userID="SYL" flexoID="8">
+    <ConceptActorReference id="27" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Activity_0hokm91" roleName="eObject" userID="SYL" flexoID="47" />
+    <ConceptActorReference id="28" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Activity_0hokm91_di" roleName="bpmnShape" userID="SYL" flexoID="48" />
+    <ModelObjectActorReference id="29" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessModel.fml.rt#SYL_13" roleName="modelElement" userID="SYL" flexoID="49" />
+    <ModelObjectActorReference id="30" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Diagrams/GenericProcess.diagram#SYL_7" roleName="shape" userID="SYL" flexoID="50" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="31" flexoConceptURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#TaskGR" userID="SYL" flexoID="5">
+    <ConceptActorReference id="32" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Activity_1k43vt3" roleName="eObject" userID="SYL" flexoID="51" />
+    <ConceptActorReference id="33" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Activity_1k43vt3_di" roleName="bpmnShape" userID="SYL" flexoID="52" />
+    <ModelObjectActorReference id="34" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessModel.fml.rt#SYL_7" roleName="modelElement" userID="SYL" flexoID="53" />
+    <ModelObjectActorReference id="35" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Diagrams/GenericProcess.diagram#SYL_8" roleName="shape" userID="SYL" flexoID="54" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="36" flexoConceptURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#ParallelGatewayGR" userID="SYL" flexoID="9">
+    <ConceptActorReference id="37" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Gateway_0qi62a5" roleName="eObject" userID="SYL" flexoID="55" />
+    <ConceptActorReference id="38" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Gateway_0e2cabw_di" roleName="bpmnShape" userID="SYL" flexoID="56" />
+    <ModelObjectActorReference id="39" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessModel.fml.rt#SYL_15" roleName="modelElement" userID="SYL" flexoID="57" />
+    <ModelObjectActorReference id="40" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Diagrams/GenericProcess.diagram#SYL_9" roleName="shape" userID="SYL" flexoID="58" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="41" flexoConceptURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#TaskGR" userID="SYL" flexoID="10">
+    <ConceptActorReference id="42" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Activity_06rp5go" roleName="eObject" userID="SYL" flexoID="59" />
+    <ConceptActorReference id="43" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Activity_06rp5go_di" roleName="bpmnShape" userID="SYL" flexoID="60" />
+    <ModelObjectActorReference id="44" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessModel.fml.rt#SYL_18" roleName="modelElement" userID="SYL" flexoID="61" />
+    <ModelObjectActorReference id="45" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Diagrams/GenericProcess.diagram#SYL_10" roleName="shape" userID="SYL" flexoID="62" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="46" flexoConceptURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#EndEventGR" userID="SYL" flexoID="11">
+    <ConceptActorReference id="47" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Event_0o1le6v" roleName="eObject" userID="SYL" flexoID="63" />
+    <ConceptActorReference id="48" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Event_0o1le6v_di" roleName="bpmnShape" userID="SYL" flexoID="64" />
+    <ModelObjectActorReference id="49" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessModel.fml.rt#SYL_20" roleName="modelElement" userID="SYL" flexoID="65" />
+    <ModelObjectActorReference id="50" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Diagrams/GenericProcess.diagram#SYL_11" roleName="shape" userID="SYL" flexoID="66" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="51" flexoConceptURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#SequenceFlowGR" userID="SYL" flexoID="17">
+    <ConceptActorReference id="52" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Flow_0ham7vf" roleName="eObject" userID="SYL" flexoID="67" />
+    <ConceptActorReference id="53" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Flow_0ham7vf_di" roleName="bpmnEdge" userID="SYL" flexoID="68" />
+    <ModelObjectActorReference id="54" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessModel.fml.rt#SYL_4" roleName="modelElement" userID="SYL" flexoID="69" />
+    <ModelObjectActorReference id="55" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessDiagram.fml.rt#SYL_2" roleName="fromNodeGR" userID="SYL" flexoID="70" />
+    <ModelObjectActorReference id="56" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessDiagram.fml.rt#SYL_3" roleName="toNodeGR" userID="SYL" flexoID="71" />
+    <ModelObjectActorReference id="57" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Diagrams/GenericProcess.diagram#SYL_12" roleName="connector" userID="SYL" flexoID="72" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="58" flexoConceptURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#SequenceFlowGR" userID="SYL" flexoID="18">
+    <ConceptActorReference id="59" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Flow_1sy65ik" roleName="eObject" userID="SYL" flexoID="73" />
+    <ConceptActorReference id="60" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Flow_1sy65ik_di" roleName="bpmnEdge" userID="SYL" flexoID="74" />
+    <ModelObjectActorReference id="61" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessModel.fml.rt#SYL_6" roleName="modelElement" userID="SYL" flexoID="75" />
+    <ModelObjectActorReference id="62" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessDiagram.fml.rt#SYL_3" roleName="fromNodeGR" userID="SYL" flexoID="76" />
+    <ModelObjectActorReference id="63" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessDiagram.fml.rt#SYL_4" roleName="toNodeGR" userID="SYL" flexoID="77" />
+    <ModelObjectActorReference id="64" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Diagrams/GenericProcess.diagram#SYL_13" roleName="connector" userID="SYL" flexoID="78" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="65" flexoConceptURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#SequenceFlowGR" userID="SYL" flexoID="19">
+    <ConceptActorReference id="66" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Flow_02f6ojv" roleName="eObject" userID="SYL" flexoID="79" />
+    <ConceptActorReference id="67" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Flow_02f6ojv_di" roleName="bpmnEdge" userID="SYL" flexoID="80" />
+    <ModelObjectActorReference id="68" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessModel.fml.rt#SYL_8" roleName="modelElement" userID="SYL" flexoID="81" />
+    <ModelObjectActorReference id="69" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessDiagram.fml.rt#SYL_4" roleName="fromNodeGR" userID="SYL" flexoID="82" />
+    <ModelObjectActorReference id="70" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessDiagram.fml.rt#SYL_5" roleName="toNodeGR" userID="SYL" flexoID="83" />
+    <ModelObjectActorReference id="71" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Diagrams/GenericProcess.diagram#SYL_14" roleName="connector" userID="SYL" flexoID="84" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="72" flexoConceptURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#SequenceFlowGR" userID="SYL" flexoID="20">
+    <ConceptActorReference id="73" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Flow_0x3ts03" roleName="eObject" userID="SYL" flexoID="85" />
+    <ConceptActorReference id="74" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Flow_0x3ts03_di" roleName="bpmnEdge" userID="SYL" flexoID="86" />
+    <ModelObjectActorReference id="75" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessModel.fml.rt#SYL_10" roleName="modelElement" userID="SYL" flexoID="87" />
+    <ModelObjectActorReference id="76" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessDiagram.fml.rt#SYL_4" roleName="fromNodeGR" userID="SYL" flexoID="88" />
+    <ModelObjectActorReference id="77" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessDiagram.fml.rt#SYL_6" roleName="toNodeGR" userID="SYL" flexoID="89" />
+    <ModelObjectActorReference id="78" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Diagrams/GenericProcess.diagram#SYL_15" roleName="connector" userID="SYL" flexoID="90" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="79" flexoConceptURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#SequenceFlowGR" userID="SYL" flexoID="21">
+    <ConceptActorReference id="80" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Flow_0sav6r3" roleName="eObject" userID="SYL" flexoID="91" />
+    <ConceptActorReference id="81" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Flow_0sav6r3_di" roleName="bpmnEdge" userID="SYL" flexoID="92" />
+    <ModelObjectActorReference id="82" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessModel.fml.rt#SYL_12" roleName="modelElement" userID="SYL" flexoID="93" />
+    <ModelObjectActorReference id="83" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessDiagram.fml.rt#SYL_6" roleName="fromNodeGR" userID="SYL" flexoID="94" />
+    <ModelObjectActorReference id="84" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessDiagram.fml.rt#SYL_7" roleName="toNodeGR" userID="SYL" flexoID="95" />
+    <ModelObjectActorReference id="85" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Diagrams/GenericProcess.diagram#SYL_16" roleName="connector" userID="SYL" flexoID="96" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="86" flexoConceptURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#SequenceFlowGR" userID="SYL" flexoID="22">
+    <ConceptActorReference id="87" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Flow_0v83f0p" roleName="eObject" userID="SYL" flexoID="97" />
+    <ConceptActorReference id="88" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Flow_0v83f0p_di" roleName="bpmnEdge" userID="SYL" flexoID="98" />
+    <ModelObjectActorReference id="89" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessModel.fml.rt#SYL_14" roleName="modelElement" userID="SYL" flexoID="99" />
+    <ModelObjectActorReference id="90" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessDiagram.fml.rt#SYL_7" roleName="fromNodeGR" userID="SYL" flexoID="100" />
+    <ModelObjectActorReference id="91" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessDiagram.fml.rt#SYL_8" roleName="toNodeGR" userID="SYL" flexoID="101" />
+    <ModelObjectActorReference id="92" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Diagrams/GenericProcess.diagram#SYL_17" roleName="connector" userID="SYL" flexoID="102" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="93" flexoConceptURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#SequenceFlowGR" userID="SYL" flexoID="23">
+    <ConceptActorReference id="94" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Flow_1cab43w" roleName="eObject" userID="SYL" flexoID="103" />
+    <ConceptActorReference id="95" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Flow_1cab43w_di" roleName="bpmnEdge" userID="SYL" flexoID="104" />
+    <ModelObjectActorReference id="96" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessModel.fml.rt#SYL_16" roleName="modelElement" userID="SYL" flexoID="105" />
+    <ModelObjectActorReference id="97" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessDiagram.fml.rt#SYL_8" roleName="fromNodeGR" userID="SYL" flexoID="106" />
+    <ModelObjectActorReference id="98" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessDiagram.fml.rt#SYL_9" roleName="toNodeGR" userID="SYL" flexoID="107" />
+    <ModelObjectActorReference id="99" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Diagrams/GenericProcess.diagram#SYL_18" roleName="connector" userID="SYL" flexoID="108" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="100" flexoConceptURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#SequenceFlowGR" userID="SYL" flexoID="24">
+    <ConceptActorReference id="101" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Flow_12ks1nn" roleName="eObject" userID="SYL" flexoID="109" />
+    <ConceptActorReference id="102" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Flow_12ks1nn_di" roleName="bpmnEdge" userID="SYL" flexoID="110" />
+    <ModelObjectActorReference id="103" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessModel.fml.rt#SYL_17" roleName="modelElement" userID="SYL" flexoID="111" />
+    <ModelObjectActorReference id="104" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessDiagram.fml.rt#SYL_5" roleName="fromNodeGR" userID="SYL" flexoID="112" />
+    <ModelObjectActorReference id="105" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessDiagram.fml.rt#SYL_9" roleName="toNodeGR" userID="SYL" flexoID="113" />
+    <ModelObjectActorReference id="106" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Diagrams/GenericProcess.diagram#SYL_19" roleName="connector" userID="SYL" flexoID="114" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="107" flexoConceptURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#SequenceFlowGR" userID="SYL" flexoID="25">
+    <ConceptActorReference id="108" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Flow_03drd8o" roleName="eObject" userID="SYL" flexoID="115" />
+    <ConceptActorReference id="109" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Flow_03drd8o_di" roleName="bpmnEdge" userID="SYL" flexoID="116" />
+    <ModelObjectActorReference id="110" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessModel.fml.rt#SYL_19" roleName="modelElement" userID="SYL" flexoID="117" />
+    <ModelObjectActorReference id="111" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessDiagram.fml.rt#SYL_9" roleName="fromNodeGR" userID="SYL" flexoID="118" />
+    <ModelObjectActorReference id="112" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessDiagram.fml.rt#SYL_10" roleName="toNodeGR" userID="SYL" flexoID="119" />
+    <ModelObjectActorReference id="113" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Diagrams/GenericProcess.diagram#SYL_20" roleName="connector" userID="SYL" flexoID="120" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="114" flexoConceptURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/ProcessDiagram.fml#SequenceFlowGR" userID="SYL" flexoID="26">
+    <ConceptActorReference id="115" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Flow_1inj2mp" roleName="eObject" userID="SYL" flexoID="121" />
+    <ConceptActorReference id="116" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Flow_1inj2mp_di" roleName="bpmnEdge" userID="SYL" flexoID="122" />
+    <ModelObjectActorReference id="117" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessModel.fml.rt#SYL_21" roleName="modelElement" userID="SYL" flexoID="123" />
+    <ModelObjectActorReference id="118" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessDiagram.fml.rt#SYL_10" roleName="fromNodeGR" userID="SYL" flexoID="124" />
+    <ModelObjectActorReference id="119" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessDiagram.fml.rt#SYL_11" roleName="toNodeGR" userID="SYL" flexoID="125" />
+    <ModelObjectActorReference id="120" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Diagrams/GenericProcess.diagram#SYL_21" roleName="connector" userID="SYL" flexoID="126" />
+  </FlexoConceptInstance>
+  <TypeAwareModelSlotInstance id="121" modelURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/Diagrams/GenericProcess.diagram" modelSlotName="diagram" roleName="diagram" userID="SYL" flexoID="12" />
+  <ConceptActorReference id="122" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#BPMNDiagram_1" roleName="diagramEObject" userID="SYL" flexoID="13" />
+  <ConceptActorReference id="123" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#BPMNPlane_1" roleName="planeEObject" userID="SYL" flexoID="14" />
+  <ModelObjectActorReference id="124" objectReference="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessModel.fml.rt#SYL_22" roleName="process" userID="SYL" flexoID="127" />
+  <ConceptActorReference id="125" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Event_0o1le6v_di" roleName="tempBPMNShape" userID="SYL" flexoID="15" />
+  <ConceptActorReference id="126" conceptURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn#Flow_1inj2mp_di" roleName="tempBPMNEdge" userID="SYL" flexoID="16" />
+</FMLRTVirtualModelInstance>

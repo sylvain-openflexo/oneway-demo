@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VirtualModel id="SYL-1" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" uri="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/VariabilityModel.fml" version="0.1" visibility="Public" name="VariabilityModel" author="sylvain" userID="SYL" flexoID="1">
+  <FlexoConcept id="SYL-6" visibility="Public" name="VariationPoint" userID="SYL" flexoID="6">
+    <Inspector id="SYL-7" inspectorTitle="VariationPoint" userID="SYL" flexoID="7" />
+    <EmbeddedFlexoConcept id="SYL-16" visibility="Public" name="Alternative" userID="SYL" flexoID="16">
+      <Inspector id="SYL-17" inspectorTitle="Alternative" userID="SYL" flexoID="17" />
+      <PrimitiveRole id="SYL-23" primitiveType="String" cloningStrategy="Clone" cardinality="ZeroOne" name="identifier" userID="SYL" flexoID="23" />
+      <FMLRTVirtualModelInstanceModelSlot id="SYL-26" virtualModelURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="bpmnFragment" userID="SYL" flexoID="26" />
+      <FlexoConceptInstanceRole id="SYL-31" virtualModelInstance="container.container" flexoConceptTypeURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/VariabilityModel.fml#TransformationType" cloningStrategy="Reference" cardinality="ZeroOne" name="transformationType" userID="SYL" flexoID="31" />
+      <CreationScheme id="SYL-67" label="create" name="create" width="800" height="600" userID="SYL" flexoID="67">
+        <BehaviourControlGraph_Sequence id="SYL-72" userID="SYL" flexoID="72">
+          <ControlGraph2_Sequence id="SYL-100" ownerContext="controlGraph2" userID="SYL" flexoID="100">
+            <ControlGraph2_AssignationAction id="SYL-69" assign="transformationType" ownerContext="controlGraph2" userID="SYL" flexoID="69">
+              <AssignableAction_ExpressionAction id="SYL-68" expression="parameters.transformationType" userID="SYL" flexoID="68" />
+            </ControlGraph2_AssignationAction>
+            <ControlGraph1_AssignationAction id="SYL-97" assign="bpmnFragment" ownerContext="controlGraph1" userID="SYL" flexoID="97">
+              <AssignableAction_AddVirtualModelInstance id="SYL-98" virtualModelInstanceTitle="identifier" virtualModelInstanceName="identifier" creationSchemeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml.create(bpmnResource)" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml" receiver="container.container" userID="SYL" flexoID="98">
+                <AddFlexoConceptInstanceParameter id="SYL-96" paramName="bpmnResource" value="parameters.bpmnFragmentResource" userID="SYL" flexoID="96" />
+              </AssignableAction_AddVirtualModelInstance>
+            </ControlGraph1_AssignationAction>
+          </ControlGraph2_Sequence>
+          <ControlGraph1_AssignationAction id="SYL-71" assign="identifier" ownerContext="controlGraph1" userID="SYL" flexoID="71">
+            <AssignableAction_ExpressionAction id="SYL-70" expression="parameters.identifier" userID="SYL" flexoID="70" />
+          </ControlGraph1_AssignationAction>
+        </BehaviourControlGraph_Sequence>
+        <GenericBehaviourParameter id="SYL-79" isRequired="true" widget="TEXT_FIELD" name="identifier" type="java.lang.String" userID="SYL" flexoID="79" />
+        <GenericBehaviourParameter id="SYL-77" isRequired="true" widget="CUSTOM_WIDGET" name="bpmnFragmentResource" type="org.openflexo.foundation.resource.FlexoResourceType&lt;org.openflexo.technologyadapter.emf.model.EMFModel&gt;" userID="SYL" flexoID="77" />
+        <GenericBehaviourParameter id="SYL-78" isRequired="true" widget="DROPDOWN" name="transformationType" type="org.openflexo.foundation.fml.FlexoEnumType&lt;file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/VariabilityModel.fml#TransformationType&gt;" userID="SYL" flexoID="78" />
+      </CreationScheme>
+    </EmbeddedFlexoConcept>
+    <FlexoConceptInstanceRole id="SYL-13" virtualModelInstance="container.container.genericProcess.model" flexoConceptTypeURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Task" cloningStrategy="Reference" cardinality="ZeroOne" name="targetTask" userID="SYL" flexoID="13" />
+    <CreationScheme id="SYL-11" label="create" name="create" width="800" height="600" userID="SYL" flexoID="11">
+      <BehaviourControlGraph_AssignationAction id="SYL-60" assign="targetTask" userID="SYL" flexoID="60">
+        <AssignableAction_ExpressionAction id="SYL-59" expression="parameters.targetTask" userID="SYL" flexoID="59" />
+      </BehaviourControlGraph_AssignationAction>
+      <GenericBehaviourParameter id="SYL-54" isRequired="true" widget="CUSTOM_WIDGET" name="targetTask" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Task&gt;" userID="SYL" flexoID="54" />
+    </CreationScheme>
+    <ActionScheme id="SYL-80" visibility="Public" label="createAlternative" name="createAlternative" width="800" height="600" userID="SYL" flexoID="80">
+      <BehaviourControlGraph_Sequence id="SYL-101" userID="SYL" flexoID="101">
+        <ControlGraph2_AddFlexoConceptInstance id="SYL-89" container="this" creationSchemeURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/VariabilityModel.fml#Alternative.create(identifier,bpmnFragmentResource,transformationType)" flexoConceptTypeURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/VariabilityModel.fml#Alternative" receiver="container" ownerContext="controlGraph2" userID="SYL" flexoID="89">
+          <AddFlexoConceptInstanceParameter id="SYL-90" paramName="identifier" value="parameters.identifier" userID="SYL" flexoID="90" />
+          <AddFlexoConceptInstanceParameter id="SYL-91" paramName="bpmnFragmentResource" value="parameters.bpmnFragmentResource" userID="SYL" flexoID="91" />
+          <AddFlexoConceptInstanceParameter id="SYL-92" paramName="transformationType" value="parameters.transformationType" userID="SYL" flexoID="92" />
+        </ControlGraph2_AddFlexoConceptInstance>
+        <ControlGraph1_LogAction id="SYL-87" logLevel="INFO" logString="(&quot;Create alternative &quot; + parameters.identifier)" ownerContext="controlGraph1" userID="SYL" flexoID="87" />
+      </BehaviourControlGraph_Sequence>
+      <GenericBehaviourParameter id="SYL-85" widget="TEXT_FIELD" name="identifier" type="java.lang.String" userID="SYL" flexoID="85" />
+      <GenericBehaviourParameter id="SYL-83" isRequired="true" widget="CUSTOM_WIDGET" name="bpmnFragmentResource" type="org.openflexo.foundation.resource.FlexoResourceType&lt;org.openflexo.technologyadapter.emf.model.EMFModel&gt;" userID="SYL" flexoID="83" />
+      <GenericBehaviourParameter id="SYL-84" isRequired="true" widget="DROPDOWN" name="transformationType" type="org.openflexo.foundation.fml.FlexoEnumType&lt;file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/VariabilityModel.fml#TransformationType&gt;" userID="SYL" flexoID="84" />
+    </ActionScheme>
+  </FlexoConcept>
+  <FlexoConcept idref="SYL-16" />
+  <FlexoEnum id="SYL-27" name="TransformationType" userID="SYL" flexoID="27">
+    <Value_FlexoEnumValue id="SYL-28" name="ReplaceTaskByFragment" userID="SYL" flexoID="28">
+      <Inspector id="SYL--1" inspectorTitle="ReplaceFragment" userID="SYL" flexoID="-1" />
+    </Value_FlexoEnumValue>
+    <Value_FlexoEnumValue id="SYL-29" name="RemoveTask" userID="SYL" flexoID="29">
+      <Inspector id="SYL--1" inspectorTitle="RemoveTask" userID="SYL" flexoID="-1" />
+    </Value_FlexoEnumValue>
+    <Inspector id="SYL-30" inspectorTitle="TransformationType" userID="SYL" flexoID="30" />
+  </FlexoEnum>
+  <UseModelSlotDeclaration id="0" modelSlotClass="org.openflexo.foundation.fml.rt.FMLRTVirtualModelInstanceModelSlot" userID="SYL" flexoID="-1" />
+  <Inspector id="SYL-2" inspectorTitle="VariabilityModel" userID="SYL" flexoID="2" />
+  <FMLRTVirtualModelInstanceModelSlot id="SYL-32" virtualModelURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml" isRequired="true" cloningStrategy="Reference" cardinality="ZeroMany" name="bpmnFragments" userID="SYL" flexoID="32" />
+  <CreationScheme id="SYL-33" label="create" name="create" width="800" height="600" userID="SYL" flexoID="33">
+    <BehaviourControlGraph_EmptyControlGraph id="SYL-34" userID="SYL" flexoID="34" />
+  </CreationScheme>
+  <ActionScheme id="SYL-35" visibility="Public" label="createVariationPoint" name="createVariationPoint" width="800" height="600" userID="SYL" flexoID="35">
+    <BehaviourControlGraph_AddFlexoConceptInstance id="SYL-94" creationSchemeURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/VariabilityModel.fml#VariationPoint.create(targetTask)" flexoConceptTypeURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/VariabilityModel.fml#VariationPoint" receiver="this" userID="SYL" flexoID="94">
+      <AddFlexoConceptInstanceParameter id="SYL-95" paramName="targetTask" value="parameters.targetTask" userID="SYL" flexoID="95" />
+    </BehaviourControlGraph_AddFlexoConceptInstance>
+    <GenericBehaviourParameter id="SYL-37" container="container.genericProcess.model" isRequired="true" widget="CUSTOM_WIDGET" name="targetTask" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Task&gt;" userID="SYL" flexoID="37" />
+  </ActionScheme>
+</VirtualModel>

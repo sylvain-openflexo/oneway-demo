@@ -12,7 +12,8 @@ public class OnewayDemo {
 
   @CreationScheme  
   OnewayDemo:create(EMFModelResource genericProcessResource) {  
-    genericProcess = BPMNEditor.create(parameters.genericProcessResource);  
+    genericProcess = BPMNEditor.create(parameters.genericProcessResource);    
+    variabilityModel = VariabilityModel.create();  
   }  
 
 }

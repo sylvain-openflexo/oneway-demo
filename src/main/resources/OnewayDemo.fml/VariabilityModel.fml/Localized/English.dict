@@ -1,0 +1,7 @@
+bpmnFragmentResource=BpmnFragmentResource
+createAlternative=CreateAlternative
+createVariationPoint=CreateVariationPoint
+identifier=Identifier
+invalid_parameter=Invalid parameter
+targetTask=TargetTask
+transformationType=TransformationType
