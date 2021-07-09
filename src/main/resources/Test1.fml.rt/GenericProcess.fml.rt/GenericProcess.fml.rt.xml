@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<FMLRTVirtualModelInstance id="0" virtualModelURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml" modelVersion="1.0" title="GenericProcess" version="0.1" flexoConceptURI="http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml" userID="SYL" flexoID="1">
-  <FlexoOntologyModelSlotInstance id="1" modelURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/BPMN/GenericProcess.bpmn" modelSlotName="bpmnModel" roleName="bpmnModel" userID="SYL" flexoID="2" />
-  <VirtualModelModelSlotInstance id="2" virtualModelInstanceURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/Test1.fml.rt/GenericProcess.fml.rt/GenericProcessModel.fml.rt" modelSlotName="model" roleName="model" userID="SYL" flexoID="3" />
-  <FreeModelSlotInstance id="3" resourceURI="http://openflexo.org/modellers/BPMN/FML/Fib/BPMNEditorUI.fib" modelSlotName="ui" roleName="ui" userID="SYL" flexoID="4" />
-</FMLRTVirtualModelInstance>
