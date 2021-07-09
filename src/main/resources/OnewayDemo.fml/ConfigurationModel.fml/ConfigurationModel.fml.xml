@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VirtualModel id="SYL-1" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" uri="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/ConfigurationModel.fml" version="0.1" visibility="Public" name="ConfigurationModel" author="sylvain" userID="SYL" flexoID="1">
   <FlexoConcept id="SYL-11" visibility="Public" name="Configuration" userID="SYL" flexoID="11">
-    <Inspector id="SYL-12" inspectorTitle="Configuration" userID="SYL" flexoID="12" />
+    <Inspector id="SYL-12" renderer="((variationPoint.targetTask.name + &quot;=&quot;) + alternative.identifier)" inspectorTitle="Configuration" userID="SYL" flexoID="12">
+      <InspectorEntry id="SYL-124" readOnly="true" widget="CUSTOM_WIDGET" data="variationPoint.targetTask" name="targetTask" label="targetTask" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://openflexo.org/modellers/resources/BPMN/FML/BPMNEditor.fml/BPMNModel.fml#Task&gt;" userID="SYL" flexoID="124" />
+      <InspectorEntry id="SYL-125" readOnly="true" widget="CUSTOM_WIDGET" data="alternative" name="alternative" label="alternative" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/VariabilityModel.fml#Alternative&gt;" userID="SYL" flexoID="125" />
+      <InspectorEntry id="SYL-126" readOnly="true" widget="TEXT_FIELD" data="excelRow.getExcelCellAt(2).cellValueAsString" name="value" label="value" type="java.lang.String" userID="SYL" flexoID="126" />
+    </Inspector>
     <FlexoConceptInstanceRole id="SYL-21" virtualModelInstance="variabilityModel" flexoConceptTypeURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/VariabilityModel.fml#VariationPoint" cloningStrategy="Reference" cardinality="ZeroOne" name="variationPoint" userID="SYL" flexoID="21" />
     <ExcelRowRole id="SYL-22" container="excel" cloningStrategy="Reference" cardinality="ZeroOne" name="excelRow" userID="SYL" flexoID="22" />
     <FlexoConceptInstanceRole id="SYL-89" virtualModelInstance="variabilityModel" flexoConceptTypeURI="file:/Users/sylvain/git/oneway-demo/src/main/resources/OnewayDemo.fml/VariabilityModel.fml#Alternative" container="variationPoint" cloningStrategy="Reference" cardinality="ZeroOne" name="alternative" userID="SYL" flexoID="89" />

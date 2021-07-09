@@ -1,3 +1,4 @@
+alternative=Alternative
 excel=Excel
 excelR=ExcelR
 excelRe=ExcelRe
@@ -8,3 +9,4 @@ excelResour=ExcelResour
 excelResourc=ExcelResourc
 excelResource=ExcelResource
 identifier=Identifier
+targetTask=TargetTask
